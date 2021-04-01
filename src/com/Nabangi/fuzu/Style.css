@@ -1,0 +1,28 @@
+
+/**
+ * _____________________________________________________    Nabangi Michael - ICS B - 134694, 21/03/2021    _________✔*/
+
+.navItem:hover {
+    -fx-background-color: rgba(0, 0, 34, 0.87);
+    -fx-border-color: #900;
+    -fx-border-width: 0px 0px 0px 3px;
+    -fx-text-fill: white;
+}
+.navIcon {
+    -fx-animated: true;
+}
+.navIcon:hover {
+    -fx-rotate: 30;
+    -fx-opacity: .7;
+    -fx-scale-x: 1.05;
+    -fx-cursor: hand;
+}
+
+.homePanelGreeting {
+    -fx-background-color: rgba(200, 200, 250, .8);
+}
+
+.btnSubmit{
+    -fx-background-color: rgb(100, 100, 228);
+    -fx-text-fill: white;
+}

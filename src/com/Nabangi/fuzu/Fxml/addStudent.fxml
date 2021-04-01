@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXComboBox?>
+<?import com.jfoenix.controls.JFXDatePicker?>
+<?import com.jfoenix.controls.JFXRadioButton?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ToggleGroup?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="200.0" prefWidth="200.0" xmlns="http://javafx.com/javafx/15.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.Nabangi.fuzu.Controllers.AddStudentController">
+    <Label alignment="CENTER" layoutX="234.0" layoutY="85.0" prefHeight="30.0" prefWidth="477.0" text="ADD STUDENT">
+        <font>
+            <Font name="Sawasdee Bold" size="24.0" />
+        </font>
+    </Label>
+    <Label layoutX="144.0" layoutY="158.0" text="First name">
+        <font>
+            <Font name="Padauk Book" size="15.0" />
+        </font>
+    </Label>
+    <JFXTextField fx:id="txtFirstName" layoutX="144.0" layoutY="176.0" prefHeight="26.0" prefWidth="311.0" />
+    <Label layoutX="491.0" layoutY="158.0" text="Last name">
+        <font>
+            <Font name="Padauk Book" size="15.0" />
+        </font>
+    </Label>
+    <JFXTextField fx:id="txtLastName" layoutX="491.0" layoutY="176.0" prefHeight="26.0" prefWidth="311.0" />
+    <Label layoutX="144.0" layoutY="240.0" text="Date of Birth">
+        <font>
+            <Font name="Padauk Book" size="15.0" />
+        </font>
+    </Label>
+    <JFXDatePicker fx:id="dateDOB" layoutX="144.0" layoutY="258.0" prefHeight="29.0" prefWidth="322.0" />
+    <Label layoutX="491.0" layoutY="240.0" text="Class">
+        <font>
+            <Font name="Padauk Book" size="15.0" />
+        </font>
+    </Label>
+    <JFXComboBox fx:id="cmbClass" layoutX="491.0" layoutY="260.0" prefHeight="26.0" prefWidth="311.0" />
+    <Label layoutX="144.0" layoutY="311.0" text="Gender" />
+    <JFXRadioButton fx:id="radioMale" layoutX="144.0" layoutY="333.0" text="Male">
+        <toggleGroup>
+            <ToggleGroup fx:id="gender" />
+        </toggleGroup>
+    </JFXRadioButton>
+    <JFXRadioButton fx:id="radioFemale" layoutX="144.0" layoutY="357.0" text="Female" toggleGroup="$gender" />
+    <JFXButton fx:id="btnAddStudent" buttonType="RAISED" layoutX="682.0" layoutY="436.0" onAction="#btnAddStudentOnClick" ripplerFill="#2301e4" styleClass="btnSubmit" stylesheets="@../Style.css" text="Add student">
+        <padding>
+            <Insets bottom="3.0" left="20.0" right="20.0" top="3.0" />
+        </padding>
+        <font>
+            <Font name="Padauk Book" size="15.0" />
+        </font>
+    </JFXButton>
+    <Label fx:id="lblAddStudentMessage" alignment="CENTER_RIGHT" layoutX="336.0" layoutY="14.0" prefHeight="21.0" prefWidth="600.0" textFill="#2dd707">
+        <font>
+            <Font name="Padauk" size="17.0" />
+        </font>
+    </Label>
+    <Label fx:id="lblErrorMessage" alignment="CENTER" layoutX="242.0" layoutY="390.0" prefHeight="16.0" prefWidth="462.0" textFill="#bf0303">
+        <font>
+            <Font name="Padauk" size="17.0" />
+        </font>
+    </Label>
+    <Label alignment="BOTTOM_RIGHT"  layoutX="815.0" layoutY="530.0" prefHeight="16.0" prefWidth="142.0" text="\@Lè_•Çapuchôn✓🩸" AnchorPane.topAnchor="533.0">
+        <font>
+            <Font name="Rasa" size="13.0" />
+        </font>
+    </Label>
+</AnchorPane>

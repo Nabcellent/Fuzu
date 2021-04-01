@@ -1,0 +1,170 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXDialog?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import de.jensd.fx.glyphs.fontawesome.FontAwesomeIconView?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.effect.Glow?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="200.0" prefWidth="200.0" xmlns="http://javafx.com/javafx/15.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.Nabangi.fuzu.Controllers.ReportCrudController">
+    <Label alignment="BASELINE_LEFT" layoutX="24.0" layoutY="8.0" prefHeight="30.0" prefWidth="477.0" text="EXAMINATION RESULTS">
+        <font>
+            <Font name="Padauk Book" size="24.0" />
+        </font>
+    </Label>
+    <Pane layoutY="52.0" prefHeight="7.0" prefWidth="200.0" style="-fx-background-color: #900;" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" />
+    <HBox fx:id="hboxButtons" alignment="CENTER_LEFT" layoutX="24.0" layoutY="69.0" prefHeight="57.0" prefWidth="98.0">
+        <FontAwesomeIconView fill="#2196f3" glyphName="USER_PLUS" onMouseClicked="#getAddView" size="27">
+            <HBox.margin>
+                <Insets right="10.0" />
+            </HBox.margin>
+        </FontAwesomeIconView>
+        <FontAwesomeIconView fill="#00e676" glyphName="REFRESH" layoutX="10.0" layoutY="48.0" onMouseClicked="#refreshTable" size="27">
+            <HBox.margin>
+                <Insets right="10.0" />
+            </HBox.margin>
+        </FontAwesomeIconView>
+    </HBox>
+    <Label alignment="BASELINE_RIGHT" layoutX="815.0" layoutY="530.0" prefHeight="20.0" prefWidth="142.0" text="\@Lè_•Çapuchôn✓🩸">
+        <font>
+            <Font name="Rasa Light" size="13.0" />
+        </font>
+    </Label>
+    <JFXDialog layoutX="436.0" layoutY="468.0" prefHeight="20.0" prefWidth="151.0" />
+    <AnchorPane fx:id="anchMarks" prefHeight="200.0" prefWidth="200.0" style="-fx-border-color: navy;" AnchorPane.bottomAnchor="100.0" AnchorPane.leftAnchor="150.0" AnchorPane.rightAnchor="150.0" AnchorPane.topAnchor="100.0">
+        <children>
+            <HBox alignment="CENTER" prefHeight="100.0" prefWidth="578.0" AnchorPane.leftAnchor="90.0" AnchorPane.rightAnchor="90.0" AnchorPane.topAnchor="70.0">
+                <children>
+                    <AnchorPane prefHeight="200.0" prefWidth="200.0">
+                        <children>
+                            <Label alignment="BASELINE_CENTER" layoutX="29.0" layoutY="14.0" text="Mathematics" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0">
+                                <font>
+                                    <Font name="Padauk" size="17.0" />
+                                </font>
+                            </Label>
+                            <JFXTextField fx:id="txtMath" alignment="BASELINE_CENTER" editable="false" focusTraversable="false" layoutX="19.0" layoutY="37.0" AnchorPane.leftAnchor="20.0" AnchorPane.rightAnchor="20.0">
+                                <font>
+                                    <Font name="Comic Sans MS Bold" size="15.0" />
+                                </font>
+                                <cursor>
+                                    <Cursor fx:constant="NONE" />
+                                </cursor>
+                                <effect>
+                                    <Glow />
+                                </effect>
+                            </JFXTextField>
+                        </children>
+                    </AnchorPane>
+                    <AnchorPane prefHeight="200.0" prefWidth="200.0">
+                        <children>
+                            <Label alignment="BASELINE_CENTER" layoutX="29.0" layoutY="14.0" prefWidth="133.0" text="English" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0">
+                                <font>
+                                    <Font name="Padauk" size="17.0" />
+                                </font>
+                            </Label>
+                            <JFXTextField fx:id="txtEng" alignment="BASELINE_CENTER" editable="false" focusTraversable="false" layoutX="19.0" layoutY="37.0" AnchorPane.leftAnchor="20.0" AnchorPane.rightAnchor="20.0">
+                                <font>
+                                    <Font name="Comic Sans MS Bold" size="15.0" />
+                                </font>
+                                <cursor>
+                                    <Cursor fx:constant="NONE" />
+                                </cursor>
+                                <effect>
+                                    <Glow />
+                                </effect>
+                            </JFXTextField>
+                        </children>
+                    </AnchorPane>
+                    <AnchorPane prefHeight="200.0" prefWidth="200.0">
+                        <children>
+                            <Label alignment="BASELINE_CENTER" layoutX="29.0" layoutY="14.0" text="Kiswahili" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0">
+                                <font>
+                                    <Font name="Padauk" size="17.0" />
+                                </font>
+                            </Label>
+                            <JFXTextField fx:id="txtSwa" alignment="BASELINE_CENTER" editable="false" focusTraversable="false" layoutX="19.0" layoutY="37.0" AnchorPane.leftAnchor="20.0" AnchorPane.rightAnchor="20.0">
+                                <font>
+                                    <Font name="Comic Sans MS Bold" size="15.0" />
+                                </font>
+                                <cursor>
+                                    <Cursor fx:constant="NONE" />
+                                </cursor>
+                                <effect>
+                                    <Glow />
+                                </effect>
+                            </JFXTextField>
+                        </children>
+                    </AnchorPane>
+                </children>
+            </HBox>
+            <HBox alignment="CENTER" prefHeight="100.0" prefWidth="578.0" AnchorPane.leftAnchor="90.0" AnchorPane.rightAnchor="90.0" AnchorPane.topAnchor="170.0">
+                <children>
+                    <AnchorPane prefHeight="200.0" prefWidth="200.0">
+                        <children>
+                            <Label alignment="BASELINE_CENTER" layoutX="29.0" layoutY="14.0" text="Avg" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0">
+                                <font>
+                                    <Font name="Padauk" size="17.0" />
+                                </font>
+                            </Label>
+                            <JFXTextField fx:id="txtAvg" alignment="BASELINE_CENTER" editable="false" focusColor="#990000" focusTraversable="false" layoutX="19.0" layoutY="37.0" unFocusColor="#990000" AnchorPane.leftAnchor="20.0" AnchorPane.rightAnchor="20.0">
+                                <font>
+                                    <Font name="Comic Sans MS Bold" size="15.0" />
+                                </font>
+                                <cursor>
+                                    <Cursor fx:constant="NONE" />
+                                </cursor>
+                                <effect>
+                                    <Glow />
+                                </effect>
+                            </JFXTextField>
+                        </children>
+                    </AnchorPane>
+                    <AnchorPane prefHeight="200.0" prefWidth="200.0">
+                        <children>
+                            <Label alignment="BASELINE_CENTER" layoutX="29.0" layoutY="14.0" text="Grade" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0">
+                                <font>
+                                    <Font name="Padauk" size="17.0" />
+                                </font>
+                            </Label>
+                            <JFXTextField fx:id="txtGrade" alignment="BASELINE_CENTER" editable="false" focusColor="#990000" focusTraversable="false" layoutX="19.0" layoutY="37.0" unFocusColor="#990000" AnchorPane.leftAnchor="20.0" AnchorPane.rightAnchor="20.0">
+                                <font>
+                                    <Font name="Comic Sans MS Bold" size="15.0" />
+                                </font>
+                                <cursor>
+                                    <Cursor fx:constant="NONE" />
+                                </cursor>
+                                <effect>
+                                    <Glow />
+                                </effect>
+                            </JFXTextField>
+                        </children>
+                    </AnchorPane>
+                </children>
+            </HBox>
+        </children>
+    </AnchorPane>
+    <Label fx:id="lblError" alignment="CENTER" layoutX="226.0" layoutY="488.0" prefHeight="18.0" prefWidth="505.0" />
+    <TableView fx:id="tblReport" layoutX="28.0" layoutY="144.0" prefHeight="308.0" prefWidth="902.0" tableMenuButtonVisible="true">
+        <columns>
+            <TableColumn fx:id="colId" maxWidth="1000.0" prefWidth="450.0" text="ID" />
+            <TableColumn fx:id="colName" maxWidth="7000.0" prefWidth="100.0" text="Student Name" />
+            <TableColumn fx:id="colMath" prefWidth="100.0" text="Mathematics" />
+            <TableColumn fx:id="colEng" prefWidth="122.0" text="English" />
+            <TableColumn fx:id="colSwa" prefWidth="450.0" text="Swahili" />
+            <TableColumn fx:id="colAvg" prefWidth="450.0" text="Average" />
+            <TableColumn fx:id="colGrade" maxWidth="2000.0" prefWidth="450.0" text="Grade" />
+            <TableColumn fx:id="colAction" prefWidth="450.0" text="Action" />
+        </columns>
+        <columnResizePolicy>
+            <TableView fx:constant="CONSTRAINED_RESIZE_POLICY" />
+        </columnResizePolicy>
+    </TableView>
+</AnchorPane>

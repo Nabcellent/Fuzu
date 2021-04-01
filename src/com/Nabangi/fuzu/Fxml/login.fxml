@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Hyperlink?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.text.Font?>
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="500.0" prefWidth="620.0" xmlns="http://javafx.com/javafx/15.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.Nabangi.fuzu.Controllers.LoginController">
+    <left>
+        <AnchorPane prefHeight="407.0" prefWidth="260.0" style="-fx-background-color: #900;" BorderPane.alignment="CENTER">
+            <ImageView fx:id="brandingImageView" fitHeight="369.0" fitWidth="260.0" layoutY="177.0" pickOnBounds="true" preserveRatio="true" AnchorPane.bottomAnchor="176.75" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="177.0">
+                <Image url="@../Public/Images/160-1606471_logo-java.png" />
+            </ImageView>
+            <Label layoutX="8.0" layoutY="478.0" text="\@Lè_•Çapuchôn✓🩸" textFill="#979797">
+                <font>
+                    <Font name="Rasa Light" size="13.0" />
+                </font>
+            </Label>
+        </AnchorPane>
+    </left>
+    <right>
+        <AnchorPane prefHeight="500.0" prefWidth="360.0" style="-fx-background-color: #fff;" BorderPane.alignment="CENTER">
+            <ImageView fx:id="lockImageView" fitHeight="32.0" fitWidth="46.0" layoutX="164.0" layoutY="38.0" pickOnBounds="true" preserveRatio="true" AnchorPane.leftAnchor="164.0" AnchorPane.rightAnchor="164.0">
+                <Image url="@../Public/Images/Webp.net-resizeimage.png" />
+            </ImageView>
+            <Label layoutX="50.0" layoutY="143.0" text="Email / Phone number / adm no" textFill="NAVY" />
+            <TextField fx:id="txtEmail" layoutX="50.0" layoutY="159.0" opacity="0.8" prefHeight="27.0" prefWidth="270.0" promptText="Email / phone number or admission no" style="-fx-border-width: 0 0 1 0; -fx-border-color: #000080; -fx-background-color: transparent;" />
+            <Label layoutX="50.0" layoutY="220.0" text="Password" textFill="NAVY" />
+            <PasswordField fx:id="txtPassword" layoutX="50.0" layoutY="241.0" opacity="0.8" prefHeight="27.0" prefWidth="270.0" promptText="Password" style="-fx-border-color: #000080; -fx-border-width: 0 0 1 0; -fx-background-color: transparent;" />
+            <Button fx:id="btnLogin" contentDisplay="RIGHT" layoutX="67.0" layoutY="373.0" mnemonicParsing="false" onAction="#btnLoginOnAction" prefHeight="26.0" prefWidth="236.0" style="-fx-background-color: #900;" text="Sign In" textFill="WHITE" />
+            <Button fx:id="btnCancel" contentDisplay="RIGHT" layoutX="67.0" layoutY="410.0" mnemonicParsing="false" onAction="#btnCancelOnAction" prefHeight="26.0" prefWidth="236.0" style="-fx-background-color: rgb(100, 100, 120);" text="Cancel" textFill="WHITE" />
+            <Label fx:id="lblErrorMessage" alignment="CENTER" layoutX="35.0" layoutY="312.0" prefHeight="16.0" prefWidth="300.0" style="-fx-background-color: #fff;" textFill="#d00000" />
+            <Hyperlink layoutX="14.0" layoutY="14.0" onAction="#linkRegisterOnAction" text="Register" />
+            <Label fx:id="lblLoginMessage" alignment="CENTER" layoutX="30.0" layoutY="89.0" prefHeight="16.0" prefWidth="315.0" style="-fx-background-color: #fff;" textFill="#2dd707" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" />
+        </AnchorPane>
+    </right>
+</BorderPane>

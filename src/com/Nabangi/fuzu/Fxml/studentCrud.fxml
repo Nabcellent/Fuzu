@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import de.jensd.fx.glyphs.fontawesome.FontAwesomeIconView?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="200.0" prefWidth="200.0" xmlns="http://javafx.com/javafx/15.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.Nabangi.fuzu.Controllers.StudentCrudController">
+    <Label alignment="BASELINE_LEFT" layoutX="24.0" layoutY="8.0" prefHeight="30.0" prefWidth="477.0" text="STUDENTS">
+        <font>
+            <Font name="Padauk Book" size="24.0" />
+        </font>
+    </Label>
+    <TableView fx:id="tblStudents" layoutX="24.0" layoutY="147.0" prefHeight="308.0" prefWidth="902.0" tableMenuButtonVisible="true">
+        <columns>
+            <TableColumn fx:id="colId" prefWidth="450.0" text="ID" />
+            <TableColumn fx:id="colFname" prefWidth="100.0" text="First Name" />
+            <TableColumn fx:id="colLname" prefWidth="100.0" text="Last Name" />
+            <TableColumn fx:id="colGender" prefWidth="122.0" text="Gender" />
+            <TableColumn fx:id="colDob" prefWidth="450.0" text="Date Of Birth" />
+            <TableColumn fx:id="colParent" prefWidth="450.0" text="Parent" />
+            <TableColumn fx:id="colAction" prefWidth="450.0" text="Action" />
+        </columns>
+        <columnResizePolicy>
+            <TableView fx:constant="CONSTRAINED_RESIZE_POLICY" />
+        </columnResizePolicy>
+    </TableView>
+    <Label fx:id="lblStudentsError" alignment="BASELINE_CENTER" layoutX="263.0" layoutY="467.0" prefHeight="16.0" prefWidth="453.0" textFill="#bf0303">
+        <font>
+            <Font name="Padauk" size="17.0" />
+        </font>
+    </Label>
+    <Pane layoutY="52.0" prefHeight="7.0" prefWidth="200.0" style="-fx-background-color: #900;" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" />
+    <HBox fx:id="hboxButtons" alignment="CENTER_LEFT" layoutX="24.0" layoutY="90.0" prefHeight="57.0" prefWidth="98.0">
+        <FontAwesomeIconView fill="#2196f3" glyphName="USER_PLUS" onMouseClicked="#getAddView" size="27">
+            <HBox.margin>
+                <Insets right="10.0" />
+            </HBox.margin>
+        </FontAwesomeIconView>
+        <FontAwesomeIconView fill="#00e676" glyphName="REFRESH" layoutX="10.0" layoutY="48.0" onMouseClicked="#refreshTable" size="27">
+            <HBox.margin>
+                <Insets right="10.0" />
+            </HBox.margin>
+        </FontAwesomeIconView>
+    </HBox>
+    <Label alignment="BOTTOM_RIGHT" layoutX="815.0" layoutY="530.0" prefHeight="16.0" prefWidth="142.0" text="\@Lè_•Çapuchôn✓🩸">
+        <font>
+            <Font name="Rasa" size="13.0" />
+        </font>
+    </Label>
+</AnchorPane>

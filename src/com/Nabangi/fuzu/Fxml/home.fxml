@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="200.0" prefWidth="200.0" xmlns="http://javafx.com/javafx/15.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.Nabangi.fuzu.Controllers.HomeController">
+    <Label fx:id="lblGreeting" alignment="CENTER" layoutX="151.0" layoutY="250.0" prefHeight="60.0" prefWidth="655.0" styleClass="homePanelGreeting" text="GOOD MORNING MR. NABANGI" textFill="#990000">
+        <font>
+            <Font size="37.0" />
+        </font>
+    </Label>
+    <ImageView fx:id="homePaneImg" fitHeight="482.0" fitWidth="830.0" layoutX="64.0" layoutY="45.0" opacity="0.1" pickOnBounds="true" preserveRatio="true" AnchorPane.leftAnchor="64.0" AnchorPane.rightAnchor="63.0">
+        <Image url="@../Public/Images/blackboard1.jpg" />
+    </ImageView>
+    <Label alignment="BASELINE_RIGHT" layoutX="815.0" layoutY="530.0" prefHeight="20.0" prefWidth="142.0" text="\@Lè_•Çapuchôn✓🩸">
+        <font>
+            <Font name="Rasa Light" size="13.0" />
+        </font>
+    </Label>
+</AnchorPane>
